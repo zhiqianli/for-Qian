@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>To My BestLove</title>
+    <link rel="stylesheet" href="node_modules/fullpage.js/dist/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/fullpage.js/dist/jquery.fullpage.min.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <audio src=""></audio>
+    <section class="section first" id='first'>
+        <div class="bgc">
+            <img src="./images/page1.jpg" alt="">
+        </div>
+        <div >
+            <span>Dear</span><span>qian</span>
+            <h3>I Love U More Than I Can Say</h3>
+            <img src="./images/page1_ball.png" alt="">
+        </div>
+    </section>
+    <section class="section second" id='second'>
+        <div class="bgc">
+            <img src="./images/page2.jpg" alt="">
+
+        </div>
+
+    </section>
+    <section class="section third" id='third'>
+        <div class="bgc">
+            <img src="./images/page3.jpg" alt="">
+        </div>
+
+    </section>
+    <section class="section fourth" id='fourth'>
+        <div class="bgc">
+            <img src="./images/page4.jpg" alt="">
+
+        </div>
+
+    </section>
+    <section class="section fifth" id=fifth>
+        <div class="bgc">
+            <img src="./images/page5.jpg" alt="">
+
+        </div>
+
+    </section>
+    <section class="section sixth" id=sixth>
+        <div class="bgc">
+            <img src="./images/page6.jpg" alt="">
+
+        </div>
+
+    </section>
+    <section class="section seventh" id=seventh>
+        <div class="bgc">
+            <img src="./images/page7.jpg" alt="">
+
+        </div>
+
+    </section>
+</div>
+<script>
+
+    $(function () {
+
+        $('#wrap').fullpage({
+           // sectionsColor: ['#0da5d6', '#2AB561', '#DE8910', '#16BA9D', '#0DA5D6'],
+            afterLoad:function (key,index) {
+                $('.section').removeClass('current');
+                $('.section').eq(index-1).addClass('current');
+            },
+            navigation:true
+        });
+
+
+
+    })
+
+</script>
+</body>
+</html>

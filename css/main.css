@@ -1,0 +1,94 @@
+
+.bgc {
+    width: 100%;
+    height: 100%;
+}
+
+.bgc img {
+    width: 100%;
+    height: 100%;
+}
+
+.section {
+    position: relative;
+}
+
+.section div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.first div:nth-child(2) {
+    top: 220px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.first div:nth-child(2) span {
+    margin: 50px;
+    font-size: 24px;
+}
+
+/*dear qian动画*/
+.first.current div:nth-child(2) span {
+    margin: 10px;
+    font-size: 30px;
+    color: pink;
+    transition: all 1s ease-out;
+}
+
+.first div:nth-child(2) h3 {
+    line-height: 1530px;
+}
+
+.first.current div:nth-child(2) h3 {
+    line-height: 65px;
+    color: deeppink;
+    transition:all 2s ease-out;
+    animation: page1H3 2s;
+}
+
+@keyframes page1H3 {
+    0% {
+        color: black;
+    }
+    30%{
+        color:blue;
+    }
+    60%{
+        color: green;
+    }
+    90%{
+        color:orange;
+    }
+    100%{
+        color: deeppink;
+    }
+}
+
+.second .bgc {
+
+}
+
+.third .bgc {
+
+}
+
+.fourth .bgc {
+
+}
+
+.fifth .bgc {
+
+}
+
+.sixth .bgc {
+
+}
+
+.seventh .bgc {
+
+}
